@@ -73,7 +73,11 @@
 
                 <!-- Contact form -->
                 <div class="contact-form">
-                    <form action="" autocomplete="off">
+                    <form
+                        method="post"
+                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                        autocomplete="off"
+                    >
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label" for="first-name">
@@ -112,7 +116,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label class="form-label" for="mail"
+                                <label class="form-label" for="email"
                                     >Mail</label
                                 >
                                 <input
@@ -120,7 +124,7 @@
                                     class="form-input"
                                     type="email"
                                     name="mail"
-                                    id="mail"
+                                    id="email"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     required
                                 />
@@ -138,7 +142,7 @@
                                     type="tel"
                                     name="phone"
                                     id="phone"
-                                    pattern="^[+]?[0-9]{9,12}$"
+                                    pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$"
                                     required
                                 />
                                 <p class="form-error">
@@ -157,7 +161,7 @@
                                     <input
                                         value="web design"
                                         type="radio"
-                                        name="website"
+                                        name="type"
                                         hidden
                                     />
                                     Web Design
@@ -165,7 +169,7 @@
                                 <label class="radio-row__label">
                                     <input
                                         type="radio"
-                                        name="website"
+                                        name="type"
                                         value="web development"
                                         hidden
                                         checked
@@ -176,7 +180,7 @@
                                     <input
                                         value="logo design"
                                         type="radio"
-                                        name="website"
+                                        name="type"
                                         hidden
                                     />
                                     Logo Design
@@ -185,7 +189,7 @@
                                     <input
                                         value="other"
                                         type="radio"
-                                        name="website"
+                                        name="type"
                                         hidden
                                     />
                                     Other

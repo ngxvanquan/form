@@ -179,7 +179,8 @@ main {
     transition: 0.3s;
 }
 
-.form-input {
+.form-input,
+.message-input {
     width: 100%;
     padding: 8px 0 15px;
     border-bottom: 2px solid #dddde6;
