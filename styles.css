@@ -289,12 +289,14 @@ main {
 }
 
 .message-input {
+    resize: none;
     width: 100%;
     outline: none;
     border: none;
     border-bottom: 2px solid #e3e3e9;
     padding: 8px 0 14px 0;
     color: #0d0d3b;
+    max-height: 200px;
 }
 
 .message-input::placeholder {
